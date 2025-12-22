@@ -1,4 +1,4 @@
-name: Run Test on PR7
+name: Run Test on PR6
 
 on:
   pull_request:
