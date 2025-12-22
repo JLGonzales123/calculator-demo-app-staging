@@ -104,7 +104,7 @@ jobs:
         env:
           TARGET_OWNER: "JLGonzales123"
           TARGET_REPO: "Cucumber_Selenium_CICD"
-          STAGING_URL: "https://jlgonzales123.github.io/calculator-demo-app-staging/"
+          STAGING_URL: "https://jlgonzales123.github.io/calculator-demo-app/"
         with:
           github-token: ${{ secrets.CICD_TOKEN }}
           script: |
@@ -209,7 +209,7 @@ jobs:
     name: Deploy to Production
     environment:
       name: production
-      url: https://jlgonzales123.github.io/calculator-demo-app-staging
+      url: https://jlgonzales123.github.io/calculator-demo-app-staging/
 
     steps:
       - name: Deploy to GitHub Pages (Production)
