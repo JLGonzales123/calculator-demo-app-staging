@@ -46,7 +46,7 @@ jobs:
     name: Deploy to Staging
     environment:
       name: staging
-      url: https://jlgonzales123.github.io/calculator-demo-app-staging/
+      url: https://jlgonzales123.github.io/calculator-demo-app/
 
     steps:
       - name: Download Pages artifact
@@ -155,8 +155,8 @@ jobs:
                 event: 'repository_dispatch',
                 per_page: 20
               });
-            
-            
+
+        
               console.log("Recent runs:", runs.data.workflow_runs.map(r => ({
               id: r.id,
               created_at: r.created_at,
@@ -214,3 +214,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages (Production)
         uses: actions/deploy-pages@v4
+ 
